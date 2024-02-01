@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verficación de edad</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h2>Inicio Sensión</h2>
+    <!--Crea un formulario donde se pregunte nombre apellidos edad y aficiones , al pulsar el boton de enviar datos se va a comprobar si el usuario es menor a 16 años. En este caso , habra que avisar al usuario de que dichos datos no seran procesados-->
+    <form id="form">
+        <label for="name" class="label">Nombre:</label>
+        <input type="text" id="name" name="nombre" required><br>
+        <label for="apellidos" class="label">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br>
+        <label for="edad" class="label">Edad:</label>
+        <input type="password" id="edad" name="edad" required><br>
+        <fieldset>
+            <legend>Elige tus aficiones:</legend>
+                <div>
+                    <input type="checkbox" name="baloncesto" id="baloncesto"/>
+                    <label for="baloncesto">Baloncesto</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Ciclismo" id="Ciclismo">
+                    <label for="Ciclismo">Ciclismo</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Jugar" id="Jugar">
+                    <label for="Jugar">Jugar a videojuegos</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="musica" id="musica">
+                    <label for="musica">Música</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="mesa" id="mesa">
+                    <label for="mesa">Jugar a juegos de mesa</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="leer" id="leer">
+                    <label for="leer">Lectura</label>
+                </div>
+
+        </fieldset><br>
+        <div class="boton">
+            <button type="button" onclick="edades()">Entrar</button>
+        </div>
+    </form>
+    <script>
+        function edades() {
+            var n = document.getElementById('name').value;
+            var ap = document.getElementById('apellidos').value;
+            var ed = document.getElementById('edad').value;
+            var b = 16;
+
+            if (ed >= b ) {
+            	document.write(`Bienvenido a mi página, ${n} ${ap}`);
+                
+            } else {
+                alert("Oye si tienes menos de 16 años los datos no se van a enviar , intentalo de nuevo");
+                location.reload()
+            }
+        }   
+    </script>
+</body>
+</html>
