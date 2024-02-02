@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h2>Inicio Sensión</h2>
+    <h2>Inicio Sesión</h2>
     <!--Crea un formulario donde se pregunte nombre apellidos edad y aficiones , al pulsar el boton de enviar datos se va a comprobar si el usuario es menor a 16 años. En este caso , habra que avisar al usuario de que dichos datos no seran procesados-->
     <form id="form">
         <label for="name" class="label">Nombre:</label>
         <input type="text" id="name" name="nombre" required><br>
         <label for="apellidos" class="label">Apellidos:</label>
         <input type="text" id="apellidos" name="apellidos" required><br>
+        <label for="direc" class="label">Direccion:</label>
+        <input type="text" id="direc" name="direc" required><br>
         <label for="edad" class="label">Edad:</label>
-        <input type="password" id="edad" name="edad" required><br>
+        <input type="number" id="edad" name="edad" required><br>
         <fieldset>
             <legend>Elige tus aficiones:</legend>
                 <div>
