@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../Index.html"><p class="logo">JuancarlosVS!</p></a>
+        </div>
+    </header>
+    
+    <section class="formulario-real">
+        <div class="container">
+            <h1>¡Participa en el SORTEO!</h1>
+            <form action="formula.php" method="post">
+                        <fieldset>
+                            <legend>Rellena tu <b>Información Personal</b></legend>
+                            <div class="Nombre">
+                                <label for="name">Nombre</label>
+                                <input type="Nombre" id="name">
+                            </div>
+                            <div>
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" name="apellidos" id="apellidos">
+                            </div>
+                            <div>
+                                <label for="correo">correo electrónico</label>
+                                <input type="email" name="CE" id="correo">
+                            </div>
+                            <div>
+                                <label for="numb">Número de teléfono</label>
+                                <input type="tel" name="numero" id="numb">
+                            </div>
+                            <div>
+                                <label for="country">Comunidad Autonoma</label>
+                                <select name="pais" id="country">
+                                    <optgroup label="Andalucía">
+                                        <option value="Sev">Sevilla</option>
+                                        <option value="Malaga">Malaga</option>
+                                        <option value="Jaen">Jaen</option>
+                                        <option value="Alemania">Almeria</option>
+                                        <option value="Granada"> Granada</option>
+                                        <option value="Cadiz">Cádiz</option>
+                                        <option value="Huelva">Huelva</option>
+                                        <option value="Cordoba">Córdoba</option>
+                                    </optgroup>
+
+                                    <optgroup label="Extremadura">
+                                            <option value="Caceres">Cáceres</option>
+                                            <option value="Badajoz">Badajoz</option>
+                                    </optgroup>
+
+                                    <optgroup label="Castilla la Mancha">
+                                        <option value="Guadarajara">Guadarajara</option>
+                                        <option value="Cuenca">Cuenca</option>
+                                        <option value="Alabacete">Albacete</option>
+                                        <option value="Ciudad Real">Ciudad Real</option>
+                                        <option value="Toledo">Toledo</option>
+                                    </optgroup>
+
+                                    <optgroup label="Madrid">
+                                        <option value="Madrid">Madrid</option>
+                                    </optgroup>
+
+                                    <optgroup label="Castilla y León">
+                                        <option value="León">León</option>
+                                        <option value="Palencia">Palencia</option>
+                                        <option value="Burgos">Burgos</option>
+                                        <option value="Valladolid">Valladolid</option>
+                                        <option value="Salamanca">Salamanca</option>
+                                        <option value="avila">Ávila</option>
+                                        <option value="Segovia">Segovia</option>
+                                        <option value="Soria">Soria</option>
+                                        <option value="Zamora">Zamora</option>
+                                    </optgroup>
+
+                                    <optgroup label="La Rioja">
+                                        <option value="LaRioja">La Rioja</option>
+                                    </optgroup>
+
+                                    <optgroup label="Pais Vasco">
+                                        <option value="Vizcaya">Vizcaya</option>
+                                        <option value="Guipúzcoa">Guipúzcoa</option>
+                                        <option value="Alava">Alava</option>
+                                    </optgroup>
+
+                                    <optgroup label="Galicia">
+                                        <option value="ACoruña">A Coruña</option>
+                                        <option value="Lugo">Lugo</option>
+                                        <option value="Orense">Orense</option>
+                                        <option value="Pontevedra">Pontevedra</option>
+                                    </optgroup>
+
+                                    <optgroup label="Asturias">
+                                        <option value="Asturias">Asturias</option>
+                                    </optgroup>
+
+                                    <optgroup label="Cantrabria">
+                                        <option value="Cantrabria">Cantrabria</option>
+                                    </optgroup>
+
+                                    <optgroup label="Navarra">
+                                        <option value="Navarra">Navarra</option>
+                                    </optgroup>
+                                    
+                                    <optgroup label="Aragón">
+                                        <option value="Huesca">Huesca</option>
+                                        <option value="Zaragoza">Zaragoza</option>
+                                        <option value="Teruel">Teruel</option>
+                                    </optgroup>
+
+                                    <optgroup label="Cataluña">
+                                        <option value="Lleida">Lleida</option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Tarragona">Tarragona</option>
+                                        <option value="Girona">Girona</option>
+                                    </optgroup>
+
+                                    <optgroup label="Comunidad Valenciana">
+                                        <option value="Valencia">Valencia</option>
+                                        <option value="Alicante">Alicante</option>
+                                        <option value="Castellon">Castellón</option>
+                                    </optgroup>
+                                    
+                                    <optgroup label="Murcia">
+                                        <option value="Murcia">Murcia</option>
+                                    </optgroup>
+
+                                    <optgroup label="Islas Baleares">
+                                        <option value="Mallorca">Mallorca</option>
+                                        <option value="Menorca">Menorca</option>
+                                        <option value="Ibiza">Ibiza</option>
+                                    </optgroup>
+
+                                    <optgroup label="Islas Canarias">
+                                        <option value="La Palma">La Palma</option>
+                                        <option value="La Gomera">La Gomera</option>
+                                        <option value="Tenerife">Tenerife</option>
+                                        <option value="Gran Canaria">Gran Canaria</option>
+                                        <option value="Fuenteventura">Fuenteventura</option>
+                                        <option value="Lanzarote">Lanzarote</option>
+                                        <option value="La Graciosa">La Graciosa</option>
+                                    </optgroup>
+
+                                    <option value="Ceuta"><b>Ceuta</b></option>
+                                    <option value="Melilla"><b>Melilla</b></option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="code">Código Postal</label>
+                                <input type="number" name="code" id="code">
+                            </div>
+                        </fieldset>
+                        <input type="submit" value="enviar" id="enviar">
+                        <input type="reset" value="borrar" id="borrar">
+                    <div>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <section id="final">
+            <p><a href="https://youtu.be/l1JrKjOFxrA?si=9qNHbRJCXGy0YhrV">Discord</a></p>
+            <span>&copy; JuanCarlosVS 2024</span>
+        </section>
+    </footer>
+
+</body>
+</html>

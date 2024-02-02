@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+
+h1 { font-size: 3.4em;}
+h2 { font-size: 2.7em;}
+p { font-size: 1.25em;}
+figcaption { font-size: 1.5em}
+
+header .logo {
+    margin: 0;   
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #4b1c71;
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+p.logo:hover{
+    color: darkviolet;
+}
+
+header {
+    background-color: rgb(245,245,245);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+tr , th , td {
+    text-align: center;
+    padding:10px 40px ;
+    border-style: line;
+    border: 6;
+}
+
+td:hover {
+    color: violet;
+}
+
+th:hover {
+    color: violet;
+}
+
+
+table {
+    margin: auto;
+    border: 6;
+    border-spacing: 0;
+}
+
+th img {
+    width: 40vh;
+    height: 40vh;
+}
+
+td a {
+    text-decoration: none;
+        font-weight: bold;
+}
+
+td a:hover {
+    color: brown;
+}
+
+#Estadisticas-15  img{
+    display: block;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#Estadisticas-15-Pro  img{
+    display: block;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#Estadisticas-15-Pro-Max  img{
+    display: block;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+
+#Estadisticas-15  figcaption{
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#Estadisticas-15-Pro  figcaption{
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#Estadisticas-15-Pro-Max  figcaption{
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#Estadisticas-15{
+    color: white;
+    background-color: #553e70;
+    text-align: center;
+}
+
+#Estadisticas-15-Pro{
+    color: white;
+    background-color: #9c1038;
+    text-align: center;
+}
+
+#Estadisticas-15-Pro-Max{
+    color: white;
+    background-color: #58772e;
+    text-align: center;
+}
+
+section.Estadisticas.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Estadisticas h2 {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin: 0;
+    
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(45,45,45);
+    height: 40vh;
+}
+
+footer p {
+    margin: 0;
+    color: whitesmoke;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+        }
+    
+        header .container{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        header nav {
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+        
+        .iphone15 .container {
+        display: flex;
+        justify-content: center;
+        }
+        
+        .iphone15 table {
+            display: block;
+            margin-left: 115px;
+            margin-bottom: 30px;
+        }
+    
+        .iphone15 h1 {
+            margin-top: 0;
+        }
+    
+        .OneOneplus11 {
+            padding: 50px;
+        }
+
+        footer #final {
+            align-items: flex-end;
+            display: block;
+        }
+
+        #formulario p {
+            text-align: left;
+            padding-right: 15px;
+        }
+    
+        #formulario .container {
+            text-align: initial;
+        }
+    
+}

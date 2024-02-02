@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+
+
+h1 { font-size: 3.4em;}
+h2 { font-size: 2.7em;}
+p { font-size: 1.25em;}
+td span { font-size: 1.7em;}
+th span { font-size: 2.3em;}
+figcaption { font-size: 1.5em; }
+
+header {
+    background-color: rgb(245,245,245);
+}
+
+header a p.logo {
+    margin: 0;   
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #4b1c71;
+    font-size: 1.5em;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+p.logo:hover{
+    color: darkviolet;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+tr , th , td {
+    text-align: center;
+    padding: 10px 40px ;
+    border-style: dotted;
+    border: 10;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 10;
+    border-style: dotted;
+    padding-bottom: 20px;
+}
+caption h1 {
+    padding-top:60px;
+}
+
+th img {
+    width: 40vh;
+    height: 40vh;
+}
+
+td a {
+    text-decoration: none;
+        font-weight: bold;
+}
+
+td a span:hover {
+    color: brown;
+}
+
+span:hover {
+    color: violet;
+}
+#Estadisticas-One  img{
+    display: block;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#Estadisticas-One  figcaption{
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.Estadisticas{
+    color: white;
+    background-color: #553e70;
+    text-align: center;
+}
+
+section.Estadisticas div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Estadisticas h1{
+        padding-top: 10px;
+        margin: 0;
+    
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(45,45,45);
+    height: 40vh;
+}
+
+footer p {
+    margin: 0;
+    color: whitesmoke;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+        }
+    
+        header .container{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        header nav {
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+        
+        .Oneplus11 .container {
+            display: flex;
+        justify-content: center;
+        }
+        
+        .OneOneplus11 table {
+            display: block;
+            margin-bottom: 30px;
+        }
+    
+        .OneOneplus11 h1 {
+            margin-top: 0;
+        }
+    
+        .OneOneplus11 {
+            padding: 50px;
+        }
+}
