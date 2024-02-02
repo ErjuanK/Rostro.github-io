@@ -1,0 +1,17 @@
+ol {
+    list-style-type: none;
+    counter-reset: section;
+  }
+  
+  li {
+    counter-increment: section;
+  }
+  
+  li::before {
+    content: counters(section, ".") ". ";
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0066cc; /* Change this to your preferred link color */
+  }
