@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <h1>Objetos javascript</h1>
+    <!--Para este programa crea el objeto pc que tenga los siguientes atributos , marca modelo y precio crea tambien el objeto persona que tenga como atributo nombre profesion y edad, inventate 2 objetos personas y 2 objetos pc. Por ultimo imprime por pantalla con la frase , "persona.nombre , trabajo de la persona "-->
+    <p id="demo"></p>
+    <p id="demot"></p>
+    <script>
+        const persona1 = {
+            nombre: 'David',
+            trabajo: 'Maestro',
+            edad: '21'
+        };
+
+        const persona2 = {
+            nombre : 'Maria',
+            trabajo : 'Policia',
+            edad : '24'
+        };
+
+        const ordenador = {
+            marca : 'Lenovo',
+            modelo : 'x1XL',
+            precio : '250€'
+        };
+
+        const ordenador2 = {
+            marca : 'Asus',
+            modelo : '21',
+            precio : '450€'
+        };
+
+        document.getElementById("demo").innerHTML = (`${persona1.nombre} trabaja de ${persona1.trabajo} y ha comprado un ${ordenador.marca}`);
+        document.getElementById("demot").innerHTML = (`${persona2.nombre} trabaja de ${persona2.trabajo} y ha comprado un ${ordenador2.marca}`);
+    </script>
+</body>
+</html>
