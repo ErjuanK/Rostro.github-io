@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cajas</title>
+        <style>
+            
+            .caja.izquierda {
+                width: 30%;
+                float: left;
+                border: 2px solid #CCC;
+                background-color: #CCEEFF;
+                padding: 20px;
+            }
+            div.caja.izquierda h2 {
+                text-align: center;
+                margin: 10px 0;
+
+            }
+            .caja.izquierda p {
+                background-color: #F2F2F2;
+            }
+            .caja.izquierda p span {
+                font-style: italic;
+            }
+            div.caja.derecha {
+                width: 70%;
+                float: right;
+                border: 2px solid #CCC;
+                background-color: #FFCC99;
+                padding: 20px;
+            }
+            table {
+                width: 100%;
+            }
+            .caja.derecha table, th, td {
+                  border: 2px dotted blue; 
+                  border-collapse: collapse;
+            }
+            .caja.derecha table tr th {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-transform: uppercase;
+
+            }
+            th, td {
+            padding: 10px 20px; }
+            
+            .caja.derecha table  tr td span {
+                text-decoration:underline;
+            }
+            div.clear {
+                clear: both;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="caja izquierda">
+                <h2>Texto en una caja</h2>
+                <p>¡Esta es una caja con texto <span>destacado</span>!</p>
+
+            </div>
+            <div class="caja derecha">
+                <h2>Tabla en otra caja</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Encabezado 1</th>
+                            <th>Encabezado 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dato de la <span>primera</span> celda</td>
+                            <td>Dato de la <span>segunda</span> celda</td>
+                        </tr>
+                        <tr>
+                            <td>Dato de la <span>tercera</span> celda</td>
+                            <td>Dato de la <span>primera</span> celda</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+</html>

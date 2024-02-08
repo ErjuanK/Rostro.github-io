@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidencias</title>
+</head>
+<body>
+    <form action="incidencias.php" method="post">
+        <fieldset>
+            <legend>Incidencia</legend>
+            <input type="text" name="mensaje" id="mensaje" value="error" hidden>
+            <div>
+                <label for="cliente">Código cliente</label>
+                <input type="text" name="cliente" id="cliente" required pattern="CL[0-9]{5}-(AF|AM|AS|EU|OC){1}" placeholder="CL00000-EU">
+            </div>
+            <div>
+                <p>Indique idioma</p>
+                <div>
+                    <input type="radio" name="idioma" id="al" value="idiomaAleman">
+                    <label for="al">Alemán</label>
+                </div>
+                <div>
+                    <input type="radio" name="idioma" id="es" value="idiomaEspanol">
+                    <label for="es">Español</label>
+                </div>
+                <div>
+                    <input type="radio" name="idioma" id="Fr" value="idiomaFrancés">
+                    <label for="Fr">Francés</label>
+                </div>
+                <div>
+                    <input type="radio" name="idioma" id="in" value="idiomaIngles">
+                    <label for="in">Inglés</label>
+                </div>
+            </div>
+            <label for="conec">Tipo conector</label>
+            <select name="conector" id="conec">
+                <option value="">Seleccione conector</option>
+                <option value="paralelo">Paralelo</option>
+                <option value="ps2">PS2</option>
+                <option value="usb">USB</option>
+            </select>
+            <div>
+                <label for="tel">Telefono de contacto</label>
+                <input type="tel" name="numTelefono" id="tel" required placeholder="555-555-555">
+            </div>
+            <div>
+                <label for="contacto">Hora de contacto</label>
+                <input type="time" name="contacto" id="contacto" min="09:00" max="19:00" required>
+            </div>
+            <div>
+                <label for="captura"></label>
+                <input type="file" name="captura" id="captura" accept="image/png, image/jpg">
+            </div>
+        </fieldset>
+        <input type="reset" value="Borrar Datos">
+        <input type="submit" value="Enviar Datos">
+    </form>
+</body>
+</html>

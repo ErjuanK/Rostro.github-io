@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Ejercicio html para practicar con hiperenlaces html de texto">
+    <title>Ejercicio 10 - Hiperenlaces</title>    
+  </head>
+
+  <body>
+    <h1>Hiperenlace</h1>
+    <ul type="square">
+      <li><a href="#partes">Partes del hiperenlace</a></li>
+      <li><a href="#tipos">Tipos de hiperenlaces</a></li>
+    </ul>
+
+    <p>En informática, un <b>hipervínculo</b> o <b>hiperenlace</b> (del inglés: <i>hyperlink</i>), también conocido simplemente como <b>enlace</b> o <b>vínculo</b> (<b><i>link</i></b>), es una referencia unidireccional en un documento electrónico que entrelaza diferentes documentos o secciones entre sí. Los usuarios tienen la oportunidad de seguir estos enlaces con tan solo un clic en el texto ancla (texto enlazado) para navegar a los documentos o las secciones correspondientes. Se dice que un usuario que sigue los hiperenlaces navega o recorre el hipertexto (texto con hiperenlaces). Un sistema de software utilizado para ver y crear hipertexto es un <i>sistema de hipertexto</i>, y crear un hiperenlace es <i>hacer un hiperenlace</i> (o simplemente enlazar).</p>
+
+    <p>El documento que contiene un hiperenlace se conoce como su documento fuente. Por ejemplo, en una obra de referencia en línea como Wikipedia o Bing. Muchas palabras y términos del texto están enlazados a las definiciones de esos términos. Los hiperenlaces se utilizan a menudo para implementar mecanismos de referencia como tablas de contenido, notas a pie de página, bibliografías, índices, cartas y glosarios.</p>
+        
+    <p>En algunos hipertextos, los hiperenlaces pueden ser bidireccionales: pueden seguirse en dos direcciones, por lo que ambos extremos actúan como anclas y objetivos. Existen disposiciones más complejas, como los enlaces de muchos a muchos.</p>
+        
+    <p>El efecto de seguir un hiperenlace puede variar con el sistema de hipertexto y a veces puede depender del propio enlace. Por ejemplo, en la World Wide Web, la mayoría de los hiperenlaces hacen que el documento de destino sustituya al documento mostrado, pero algunos están marcados para hacer que el documento de destino se abra en una nueva ventana (o en una nueva pestaña). Otra posibilidad es la transclusión, en la que el objetivo del enlace es un fragmento del documento que sustituye al ancla del enlace dentro del documento de origen. No sólo las personas que navegan por el documento siguen los hipervínculos. Estos hipervínculos también pueden ser seguidos automáticamente por programas. Un indexador web o crawler es un programa que recorre el hipertexto, siguiendo cada hiperenlace y recogiendo todos los documentos recuperados.</p>
+    
+    <h2 id="partes">Partes del hiperenlace</h2>
+    <p>Un enlace cuenta con dos extremos, denominados anclas (<em>nautilus</em>), y una dirección.</p>
+    
+    <p>El enlace comienza en el ancla origen y apunta al ancla destino. Sin embargo, el término "enlace" a menudo se utiliza para el ancla origen, mientras que al ancla destino se denomina enlace de destino (<em>link target</em>).</p>
+    
+    <p>El enlace de destino más utilizado es la <b>World Wide Web</b>. Puede invocar a un documento, por ejemplo, una página web, a otro recurso, o a una posición determinada en una <b>página web</b>. Este último se consigue asignando a un elemento <b>HTML</b> el atributo "name" o "id" en esa posición del documento <b>HTML</b>. El URL de la posición es el url de la página con "#atributo name" añadido.</p>
+
+    <p>Cuando los enlaces de destino invocan, además de texto, elementos <b>multimedia</b> (audio, video, imágenes, etc. ), puede decirse que estamos navegando en un espacio <b>hipermedia</b>, un ámbito de interacción humana que intensifica la densidad de los mensajes, dentro de la gama exhaustiva de supuestos funcionales que aporta la Red, como, por ejemplo: comunicación en tiempo real y en tiempo diferido, comunicación de una persona a una persona, de varias a una, de una a varias, de varias a varias, etc.</p>
+
+    <h3>Comportamiento de los enlaces en los navegadores web</h3>
+    <p>Un <b>navegador web</b> normalmente muestra un hiperenlace de alguna forma distintiva, por ejemplo, en un color, letra o estilo diferente. El comportamiento y estilo de los enlaces se puede especificar utilizando lenguaje <b>CSS</b>.</p>
+    
+    <p>El puntero del ratón también puede cambiar a forma de mano para indicar el enlace. En muchos navegadores, los enlaces se muestran en texto azul subrayado cuando no han sido visitados, y en texto púrpura subrayado cuando han sido visitados. Cuando el usuario activa el enlace (por ejemplo, pinchando sobre él con el ratón) el <b>navegador</b> mostrará el destino del enlace. Si el destino no es un archivo <b>HTML</b>, dependiendo del tipo de archivo y del navegador y sus <b><i>plugins</i></b>, se puede activar otro programa para abrir el archivo.</p>
+
+    <p>El código HTML contiene todas las características principales de un enlace:</p>
+    <ul>
+      <li><b>link target (URL)</b> (destino) o (ubicación)</li>
+      <li><b>link label</b> (etiqueta)</li>
+      <li><b>link title</b> (título)</li>
+      <li><b>link class</b> or link id (clase)</li>
+    </ul>
+
+    <h2 id="tipos">Tipos de hiperenlaces</h2>
+    <ul type="circle">
+      <li>Hipervínculo de texto: Este hipervínculo de texto es un enlace que se encuentra asociado a un texto, de forma que al hacer clic sobre ese texto se carga la página donde indique el hipervínculo.</li>
+      <li>Hipervínculo de imagen: Un hipervínculo de imagen es un enlace que se encuentra asociado a una imagen, de forma que si se hace clic sobre esa imagen se carga la página que indique el hipervínculo.</li>
+      <li>Hipervínculo local o interno: Un hipervínculo local o interno es un vínculo a una página que se encuentra en el mismo sitio web (sitio local).</li>
+      <li>Hipervínculo externo: Un hipervínculo externo es un vínculo a otro sitio web en Internet (sitio externo). Es un vínculo a cualquier otro lugar fuera del sitio actual.</li>
+      <li>Hipervínculo a una dirección de correo electrónico: Un hipervínculo a una dirección de correo electrónico es un vínculo que contiene una dirección de correo. Al pulsar en él, automáticamente se abre el programa de correo que tenga el usuario instalado para poder escribir a esa dirección de correo.</li>
+      <li>Hipervínculo a un número de teléfono: Un hipervínculo a un número de teléfono permite que aparezca al usuario el cuadro de diálogo para iniciar una llamada. Especialmente útil cuando se visualiza la página desde un dispositivo móvil.</li>
+    </ul>
+
+    <h3>Ejemplos</h3>
+    <ol>
+      <li>Enlace al <a href="ejercicio_01.html" target="_blank">primer ejercicio</a> realizado.</li>
+      <li>Enlace a la <a href="https://www.iescamas.es/" target="_blank">página web</a> del centro en el que estudias.</li>
+      <li>Puedes <a href="mailto:direccion@iescamas.es">enviar un correo</a> al equipo directivo</a> responsable de la organización del centro.</li>
+      <li>Puedes <a href="tel:+34671569400">llamar por teléfono</a> al instituto.</li>
+      <li>Descarga del archivo de <a href="descargas/image_map.zip">mapa de imágenes</a> visto en clase.</li>
+    </ol>
+  </body>
+  
+
+    
+</html>

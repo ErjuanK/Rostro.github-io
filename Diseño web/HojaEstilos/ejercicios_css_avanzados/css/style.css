@@ -1,0 +1,86 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+#texto1 {
+    width: 80%;
+    float: left;
+}
+div#texto1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+p#p_texto1_1 {
+    padding: 10px;
+}
+p#p_texto1_2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+div#imagen1 {
+    float: left;
+    width: 20%;
+}
+div#texto2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+p#p_texto2_1 {
+    padding: 0px 10px ;
+}
+p#p_texto2_2 {
+    text-align: center;
+}
+div#imagen2 {
+    float: right;
+    width: 30%;
+}
+div.caja1 {
+    background-color: #ff0064;
+    border: 2px 5px;
+    border:solid color white;
+}
+.caja1 span {
+    color: white;
+    font-weight: bold;
+
+}
+.caja1 , .caja2 , .caja3 , .caja4{
+    width: 25%;
+    height: 200px;
+}
+div.caja2 {
+    background-color: #ec4689;
+    border: 3px dotted;
+}
+.caja2 p {
+    color: rgb(226, 230, 10);
+}
+
+div.caja3 {
+    background-color: rgb(10, 165, 230);
+    border: 15px 10px;
+    border: double blue dotted white;
+}
+.caja3 h3 {
+    padding: 20px 10px 10px 30px;
+}
+div.caja4 {
+    background-color: #494544;
+}
+div.caja4 table {
+    margin: 20px;
+    border-collapse: collapse;
+    border: solid white 2px;
+}
+div.caja4 table tr {
+    padding: 15px;
+}
+div.caja4 table tr td {
+    color: #71ffff;
+}
+div.caja4 table tr th {
+color: #71ffff;
+}

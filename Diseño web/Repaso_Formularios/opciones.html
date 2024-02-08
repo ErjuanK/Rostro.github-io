@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opcionees</title>
+</head>
+<body>
+    <form action="opciones.php" method="get"> 
+        <div>
+            <label for="op">Opción</label>
+            <input type="text" name="opcion" id="op" required pattern="OPC[0-9]{3}(A|E|I|O|U){1}" placeholder="OPC000E" minlength="7">
+        </div>
+        <div>
+            <label for="cFondo">Color</label>
+            <input type="color" name="colorFondo" id="cFondo" required>
+        </div>
+        <div>
+            <label for="rango">Transparencia</label>
+            <input type="range" name="alpha" id="rango" min="0" max="100" value="80" step="10">
+        </div>
+        <div>
+            <textarea name="escribir" id="escribir" cols="52" rows="4" placeholder="Utilice este cuadro para escribir"></textarea>
+        </div>
+        <button type="reset">Borar Opciones</button>
+        <button type="submit">Enviar Opciones</button>
+    </form>
+</body>
+</html>

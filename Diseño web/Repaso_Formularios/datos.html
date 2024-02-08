@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos personales y laborales</title>
+</head>
+<body>
+    <form action="datos.php" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre" id="name" size="40" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label for="ap">Apellidos</label>
+                <input type="text" name="apellidos" id="ap" size="40" placeholder="Apellidos" required>
+            </div>
+            <div>
+                <label for="dni">Documento de identidad</label>
+                <input type="text" name="dni" id="dni" size="40" placeholder="Documento Nacional Identidad" pattern="[0-9]{8}[A-Z]{1}">
+            </div>
+            <div>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" required size="40" placeholder="Correo electrónico">
+            </div>
+            <div>
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento" id="date" max="2007-12-31">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Laborales</legend>
+            <div>
+                <label for="nempresa">Empresa</label>
+                <input type="text" name="nombreEmpresa" id="nempresa" placeholder="Nombre de la empresa">
+            </div>
+            <div>
+                <label for="act">Actividad de la empresa</label>
+                <select name="actividad" id="act">
+                    <option value="">Seleccione Actividad</option>
+                    <optgroup label="Sector Primario">
+                        <option value="agr">Agricultura</option>
+                        <option value="gan">Ganadería</option>
+                        <option value="min">Mineria</option>
+                        <option value="pes">Pesca</option>
+                    </optgroup>
+                    <optgroup label="Sector Segundario">
+                        <option value="art">Artesanía</option>
+                        <option value="const">Construcción</option>
+                        <option value="enrg">Energia</option>
+                        <option value="ind">Industria</option>
+                    </optgroup>
+                    <optgroup label="Sector Terciario">
+                        <option value="bca">Banca</option>
+                        <option value="com">Comercio</option>
+                        <option value="seb">Servicios del estado de bienestar</option>
+                        <option value="tyc">Transporte y comunicaciones</option>
+                        <option value="tyo">Turismo y ocio</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="nsalario">Salario</label>
+                <input type="number" name="nombresalario" id="nsalario" placeholder="Salario del trabajador" step="0.01" min="530.25">
+            </div>
+            <div>
+                <p>Tamaño de empresa:</p>
+                <div>
+                    <input type="radio" name="tamEmpresa" id="Micro" value="MICROPYME">
+                    <label for="Micro">MICROPYME</label>
+                </div>
+                <div>
+                    <input type="radio" name="tamEmpresa" id="pequeña" value="pequeña">
+                    <label for="pequeña">PEQUEÑA</label>
+                </div>
+                <div>
+                    <input type="radio" name="tamEmpresa" id="mediana" value="mediana">
+                    <label for="mediana">MEDIANA</label>
+                </div>
+                <div>
+                    <input type="radio" name="tamEmpresa" id="gran" value="gran">
+                    <label for="gran">GRAN</label>
+                </div>
+            </div>
+        </fieldset>
+        <input type="checkbox" name="condiciones" id="cond">
+        <label for="cond">Estoy de acuerdo con los <a href="termino.html">términos y condiciones</a></label>
+        <button type="reset">Borrar Datos</button>
+        <button type="submit">Enviar Datos</button>
+    </form>
+</body>
+</html>

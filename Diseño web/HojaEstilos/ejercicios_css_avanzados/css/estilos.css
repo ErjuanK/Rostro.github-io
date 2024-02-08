@@ -1,0 +1,47 @@
+#logo h2 {
+    text-transform:uppercase ;
+}
+#contenedor {
+    width: 70%;
+}
+#cabecera {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+#menu {
+    margin-bottom: 6em;
+}
+div#menu ul li {
+    
+    float:left;
+    list-style-type: none;
+    color: blue;
+    margin: 10px;
+}
+div#menu ul li a {
+    text-decoration: none;
+}
+#menu ul li a:hover {
+    color: black;
+}
+#contenido {
+    background-color: gray;
+    border-top: 4px orange dotted;
+    border-bottom: 4px orange dotted;
+    border-left: 2px orange solid;
+    border-right: 2px orange solid;
+}
+.comunidades p {
+    text-align: center;
+    color: white;
+}
+.comunidades h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 150, 50);
+}
+p.enlace {
+    text-align: right;   
+}
+.enlace a {
+    color: yellow;
+}
