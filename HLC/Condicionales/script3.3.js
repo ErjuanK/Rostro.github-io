@@ -3,6 +3,12 @@ const imagen = document.getElementById("imagen");
 
 switch(a) {
     case "Sevilla":
+    case "Malaga":
+    case "Cadiz" :
+    case "Jaen" :
+    case "Granada":
+    case "Almeria":  
+    case "Cordoba" :
         document.write("<h2>Pertences a la comunidad autonoma de Andalucía</h2>");
         src = "https://cope-cdnmed.cope.es/resources/jpg/0/4/1648111595140.jpg";
         break;
