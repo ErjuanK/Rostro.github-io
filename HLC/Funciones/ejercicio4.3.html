@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Muestra por consola la hora con sus minutos y segundos: 16:10:32. Debe actualizarse cada segundo.-->
+
+    <p id="hora"></p>
+
+    <script>
+
+    function horaexacta() {
+        const b = new Date();
+        const hours = b.getHours();
+        const minutes = b.getMinutes();
+        const seconds = b.getSeconds();
+        document.getElementById("hora").innerHTML = (`Son las : ${hours}:${minutes}:${seconds}`);
+    }
+
+    setInterval(horaexacta, 1000)
+    </script>
+
+</body>
+</html>

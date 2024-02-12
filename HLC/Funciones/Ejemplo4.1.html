@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcularEdad(anyo) {
+	    return new Date().getFullYear() - anyo;
+    }
+
+    var nombre = prompt("Dime tu nombre")
+    var anyoNacimiento = prompt("Dime tu año de nacimiento")
+    var edad = calcularEdad(anyoNacimiento)
+
+
+    document.write(`${nombre} nació en ${anyoNacimiento} y tiene ${edad} años.`);
+    // Bob nació en 2000 y tiene 22 años.
+
+    </script>
+</body>
+</html>
