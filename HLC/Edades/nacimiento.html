@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>año de nacimiento </title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var n = prompt("Indique su nombre")
+        var e = parseInt(prompt("Indique su edad"));
+        var a =  new Date().getFullYear();
+
+        const nacimiento = a - e;
+
+        document.getElementById("demo").innerHTML = (`Buenas ${n} segun los datos ya puedo afirmar que usted nacio en el año ${nacimiento}`)
+    </script>
+</body>
+</html>
