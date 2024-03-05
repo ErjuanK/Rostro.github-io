@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+}
+
+h1 { font-size: 3.6em;}
+h2 { font-size: 2.7em;}
+h3 { font-size: 2em;}
+p { font-size: 1.5em;}
+
+.color-negrita { color: #a48b53;}
+
+button {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding:  10px 20px;
+    border-radius: 10px;
+    border:  1px solid rgba(0, 0, 0, 0.5);
+    box-shadow:  2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color:  #7c6e43;
+}
+
+button:hover{
+    background-color: #a48b53;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245,245,245);
+}
+
+header .logo {
+    margin: 0;   
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #7c6e43;
+    font-size: 1.3em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #a48b53;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/empresas/medios/latiendadevelezbrunchportad-0009-krCH--940x529@abc.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+#descripcion-1 {
+    padding: 320px 12px;
+}
+
+ .img-container {
+        text-align: center;
+        
+}
+
+#des-moviles .container {
+    padding: 165px 12px;
+    
+}
+
+#des-moviles {
+    color: white;
+    background-color: rgb(30,30,30);
+    text-align: center;
+}
+
+#des-moviles h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#des-moviles p{
+    display: none;
+}
+
+#des-moviles .des {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 50px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.des:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/empresas/medios/bocata_sobraquesojamo6.webp");
+    
+}
+
+
+.des:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/empresas/medios/44534F3C-FD73-46BC-9745-7C28FB890379.jpg");
+
+}
+
+#formulario {
+    background-color:  rgba(0,0,0,0.5),;
+}
+
+.price-container {
+    display: flex;
+    align-items:center ;
+}
+
+.price-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+#formulario .container {
+    text-align: center;
+    padding: 305px 12px;
+}
+
+footer #final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    height: 80vh;
+}
+
+footer p {
+    margin: 0;
+    color: whitesmoke;
+}
+
+footer span {
+    color: rgb(100, 100, 100);
+}
+
+@media (min-width: 720px) {
+    header {
+    position: fixed;
+    width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #des-moviles .moviles {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #des-moviles p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #des-moviles h3 {
+        margin-top: 0;
+    }
+
+    #des-moviles .des {
+        padding: 50px;
+    }
+
+    #formulario {
+        background-image: url("imagenes/sorteo.png");
+        background-repeat: no-repeat;
+        background-size: 400px 300px;
+        background-position:calc(100vw - 500px) 130px;
+    }
+
+    #formulario p {
+        text-align: left;
+        padding-right: 15px;
+    }
+
+    #formulario .container {
+        text-align: initial;
+    }
+
+    footer #final {
+        align-items: flex-end;
+        display: block;
+    }
+}
+
