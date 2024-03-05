@@ -87,7 +87,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/empresas/medios/latiendadevelezbrunchportad-0009-krCH--940x529@abc.webp");
+    ,url("/medios/latiendadevelezbrunchportad-0009-krCH--940x529@abc.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -144,7 +144,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/empresas/medios/bocata_sobraquesojamo6.webp");
+    ,url("/medios/bocata_sobraquesojamo6.webp");
     
 }
 
@@ -155,7 +155,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/empresas/medios/44534F3C-FD73-46BC-9745-7C28FB890379.jpg");
+    ,url("/medios/44534F3C-FD73-46BC-9745-7C28FB890379.jpg");
 
 }
 
@@ -163,21 +163,13 @@ header a:hover{
     background-color:  rgba(0,0,0,0.5),;
 }
 
-.price-container {
-    display: flex;
-    align-items:center ;
-}
-
-.price-container img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 16px;
+td img {
+    padding-left: 230px;
 }
 
 #formulario .container {
     text-align: center;
-    padding: 305px 12px;
+    padding: 305px 12px
 }
 
 footer #final {
