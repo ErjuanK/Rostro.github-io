@@ -1,0 +1,173 @@
+body {
+    background-color: white;
+    color: white;
+    margin: 0;
+    font-family: 'Franklin Gothic Small', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-inicio {
+background-color: black;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+border-style: solid;
+border-color: lightgrey;
+border-width: 0px 0px 1px 0px;
+
+}
+
+    .logo {
+    
+    }
+
+    .logo img {
+        width:300px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 10px;
+    }
+
+    .nav select {
+        margin: 10px 10px;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    .nav select:hover {
+        margin: 10px 10px;
+        padding: 7px;
+        border-radius: 5px;
+        box-shadow: inset 3px 2px 6px  green;
+        transition: 0.3s;
+    }
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 20px;
+        padding: 10px 10px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        border-color: white;
+        color: white;
+    }
+
+    .user img {
+        width: 50px;
+    }
+
+.sub-barra {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 15%;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 0px 0px 1px 0px;
+}
+
+.sub-barra a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.sub-barra a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: darkgreen;
+    transition: 0.3s;
+}
+
+.sub-barra a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.banner-publi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.banner-publi img {
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+
+
+/* HASTA AQUI EL ENCABEZADO */
+
+
+.nombre-cine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.left-nombre {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-nombre img {
+    width: 300px;
+}
+
+/* HASTA AQUI NOMBRE */
+
+
+@media (max-width:800px) {
+
+    .barra-inicio {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-style: solid;
+        border-color: lightgrey;
+        border-width: 0px 0px 1px 0px;
+    
+    }
+
+    .sub-barra {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 15%;
+        border-style: solid;
+        border-color: lightgray;
+        border-width: 0px 0px 1px 0px;
+
+    }
+    
+}
+
+@media (max-width:550px) {
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 10px;
+    }
+    
+}
+
