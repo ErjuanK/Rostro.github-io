@@ -7,6 +7,8 @@ body {
     flex-direction: column;
 }
 
+
+
 .barra-inicio {
     background-color: black;
     display: flex;
@@ -15,7 +17,6 @@ body {
     border-style: solid;
     border-color: lightgrey;
     border-width: 0px 0px 1px 0px;
-
 
 }
 
@@ -184,6 +185,13 @@ body {
     padding: 5px 15px;
 }
 
+select {
+    -webkit-appearance: none; /* Elimina la apariencia predeterminada de Safari */
+    -moz-appearance: none; /* Elimina la apariencia predeterminada de Firefox */
+    appearance: none; /* Elimina la apariencia predeterminada de otros navegadores */
+    /* Agrega el resto de estilos que desees */
+}
+
 .barra-horario a:active {
     text-decoration: none;
     color: white;
@@ -348,6 +356,13 @@ body {
     width: 250px;
 }
 
+select {
+    -webkit-appearance: none; /* Elimina la apariencia predeterminada de Safari */
+    -moz-appearance: none; /* Elimina la apariencia predeterminada de Firefox */
+    appearance: none; /* Elimina la apariencia predeterminada de otros navegadores */
+    /* Agrega el resto de estilos que desees */
+}
+
 .pie-pagina .grupo-1 .box h2 {
     color: #fff;
     margin-bottom: 25px;
@@ -443,6 +458,12 @@ body {
 
     }
 
+    select {
+        -webkit-appearance: none; /* Elimina la apariencia predeterminada de Safari */
+        -moz-appearance: none; /* Elimina la apariencia predeterminada de Firefox */
+        appearance: none; /* Elimina la apariencia predeterminada de otros navegadores */
+        /* Agrega el resto de estilos que desees */
+    }
 
     .pie-pagina .grupo-1 {
         width: 90%;
